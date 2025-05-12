@@ -2,12 +2,14 @@
 
 const { test, expect } = require('@playwright/test');
 
-const PASSWORD = process.env.SAUCEDEMO_PASSWORD;
+//const PASSWORD = process.env.SAUCEDEMO_PASSWORD;
 
-if (!PASSWORD) {
+PASSWORD = 'secret_sauce'
+
+//if (!PASSWORD) {
   //hiding the password in the code by setting up an environment variable for security reasons//
-  throw new Error('Environment variable SAUCEDEMO_PASSWORD is not set.'); 
-}
+  //throw new Error('Environment variable SAUCEDEMO_PASSWORD is not set.'); 
+//}
 
 async function login(page, username) { //definition
   await page.goto('https://www.saucedemo.com/');
