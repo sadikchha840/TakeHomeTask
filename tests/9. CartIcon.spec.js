@@ -4,7 +4,7 @@ const { test, expect } = require('@playwright/test');
 
 //const PASSWORD = process.env.SAUCEDEMO_PASSWORD;
 
-PASSWORD = 'secret_sauce'
+const PASSWORD = 'secret_sauce';
 
 //if (!PASSWORD) {
   //hiding the password in the code by setting up an environment variable for security reasons//
